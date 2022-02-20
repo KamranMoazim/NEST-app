@@ -10,7 +10,7 @@ export class StudentTeacherController {
 
   @Get()
   getStudentsOfTeacher(
-    @Param() param : {teacherId: string}
+    @Param() param : {teacherId: string}   
   ) : FindResponseStudentsDto[] {
     return this.studentTeacherService.getStudentsOfTeacher(param.teacherId)
   }
